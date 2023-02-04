@@ -33,8 +33,7 @@ type Interface interface {
 	NvmeV1() nvmev1.NvmeV1Interface
 }
 
-// Clientset contains the clients for groups. Each group has exactly one
-// version included in a Clientset.
+// Clientset contains the clients for groups.
 type Clientset struct {
 	*discovery.DiscoveryClient
 	nvmeV1 *nvmev1.NvmeV1Client
